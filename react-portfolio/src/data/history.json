@@ -1,0 +1,29 @@
+[
+    {
+      "role": "Software Developer",
+      "organisation": "Trust Insurance Company",
+      "startDate": "June, 2023",
+      "endDate": "Present",
+      "experiences": ["Worked on PHP software systems", "Reduced load times by 50%"],
+      "imageSrc": "history/trust.png"
+    },
+    {
+      "role": "Backend developer trinee",
+      "organisation": "Projneer",
+      "startDate": "june, 2022",
+      "endDate": "Oct, 2022",
+      "experiences": ["Worked on Perl", "Designed new scripts with python"],
+      "imageSrc": "history/projneer.png"
+    },
+    {
+      "role": "Picto blox trainer",
+      "organisation": "Ministry of Communications and Information Technology",
+      "startDate": "Dec, 2021",
+      "endDate": "Jan, 2022",
+      "experiences": [
+        "Worked on Picto blox libraries",
+        "Volenteer as at teacher to learn kids"
+      ],
+      "imageSrc": "history/Picto.png"
+    }
+  ]

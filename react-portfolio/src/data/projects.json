@@ -1,0 +1,17 @@
+[
+    {
+      "title": "Project A",
+      "imageSrc": "projects/projecta.PNG",
+      "description": "This project creates an internal communication technique for trust company.",
+      "skills": ["PHP", "Laravel", "MyPhpAdmin"],
+      "source": "https://github.com/Nadeen-Shbayeh/Intranet-Trust-company"
+    },
+    {
+      "title": "Project B",
+      "imageSrc": "projects/projectb.PNG",
+      "description": "This is a project made to learn React JS by building an app.",
+      "skills": ["React", "JavaScripte", "Bootstarp"],
+      "source": "https://github.com/Nadeen-Shbayeh/croissant-website"
+    }
+   
+  ]
