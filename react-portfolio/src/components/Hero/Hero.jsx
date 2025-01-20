@@ -7,14 +7,17 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Nadeen Shbayeh</h1>
+        <div data-text="Hi, I'm Nadeen Shbayeh" className={styles.title}>
+          Hi, I'm Nadeen Shbayeh 👋
+        </div>
         <p className={styles.description}>
-          I'm a full-stack developer. Motivated professional who quickly masters new technology to improve operations. Strong team
-          player with excellent communication and collaboration skills. Software domain expert with a strong
-          background and passion for innovative technology solutions.
+          A Software Engineer with a strong passion for technology and problem-solving. I have experience in developing software solutions, managing databases, and collaborating on projects that make a difference. I enjoy learning new skills, tackling challenges, and delivering high-quality results.
+          <br />
+          <br />
+          When I’m not coding, you’ll find me exploring new technologies, mentoring others, or pursuing my interests in photography 📸, fitness 🏋️‍♀️, and traveling ✈️.
         </p>
-        <a href="mailto:nadeenshbayeh@gmail.com" className={styles.contactBtn}>
-          Contact Me
+        <a href='/cv.pdf' className={styles.contactBtn} download>
+          Download my CV 
         </a>
       </div>
       <img
@@ -27,3 +30,4 @@ export const Hero = () => {
     </section>
   );
 };
+

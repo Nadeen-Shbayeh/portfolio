@@ -4,14 +4,19 @@
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  background: linear-gradient(180deg, #9f57bc 0%, #4e1353 100%);
+  background: linear-gradient(180deg, #45719b 0%, #3f668a 100%);
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
-  max-width: 345px;
+  width: 30%;
+  height: 20%;
 }
 
+
 .image {
-  margin-bottom: 26px;
+
+  width: 100%;
+  height: 50%;
+  
 }
 
 .title {
@@ -21,12 +26,12 @@
 
 .description {
   margin-top: 6px;
-  font-size: 25px;
+  font-size: 15px;
   font-weight: 400;
 }
 
 .skills {
-  width: 100%;
+  width: 50%;
   margin-top: 14px;
   display: flex;
   flex-direction: row;
@@ -36,7 +41,7 @@
 }
 
 .skill {
-  font-size: 25px;
+  font-size: 15px;
   font-weight: 400;
   border-radius: 100px;
   background: var(--color-dark);
@@ -44,8 +49,8 @@
 }
 
 .links {
-  width: 100%;
-  margin-top: 26px;
+  width: 50%;
+  margin-top: 20px;
   display: flex;
   justify-content: space-around;
 }
@@ -53,8 +58,8 @@
 .link {
   text-decoration: none;
   color: var(--color-text);
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 100;
   border-radius: 100px;
   background: var(--color-primary);
   padding: 1px 22px;

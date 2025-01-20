@@ -12,46 +12,74 @@
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: var(--color-text);
-  z-index: 1;
+  max-width: 50%;
+  z-index: 2;
+}
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ebe5e5;
+  position: relative;
+  overflow: hidden; /* Ensures the animation stays within bounds */
+  white-space: nowrap; /* Prevents text wrapping */
+  width: 0; /* Initial width for typing effect */
+  
+  animation: typing 5s steps(50, end) infinite, blink 0.9s step-end infinite;
 }
 
-.title {
-  font-size: 72px;
-  font-weight: 900;
-  margin-bottom: 33px;
-  font-family: var(--font-roboto);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 70%,
-    rgba(255, 255, 255, 0) 120%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+/* Keyframes for typing animation */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 150%; /* Text is fully visible */
+  }
+  100% {
+    width: 0; /* Text disappears */
+  }
 }
+
+/* Keyframes for blinking cursor */
+@keyframes blink {
+  0% {
+    border-right-color: #007bff;
+  }
+  50% {
+    border-right-color: transparent;
+  }
+  100% {
+    border-right-color: #007bff;
+  }
+}
+
 
 .description {
-  font-size: 30px;
-  font-family: var(--font-roboto);
-  margin-bottom: 52px;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #ffffff;
 }
+
 
 .contactBtn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #9a9ba0;
+  border: none;
+  border-radius: 5px;
   text-decoration: none;
-  background-color: var(--color-primary);
-  color: var(--color-text);
-  border-radius: 100px;
-  font-size: 30px;
-  font-weight: 600;
-  padding: 17px 26px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
+
+
 .heroImg {
-  width: 50%;
+  width: 30%;
   z-index: 1;
   margin-right: 50px;
   animation-name: floating;

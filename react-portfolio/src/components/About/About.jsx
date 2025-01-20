@@ -15,16 +15,16 @@ export const About = () => {
         />
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/graduation.png")} alt="Cursor icon" />
+            <img className={styles.aboutItemImg} src={getImageUrl("about/graduation.png")} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
-              <h3>EDUCATION</h3>
+              <h3>Education</h3>
               <p>
-              Graduated from Birziet University with Bachelor of Computer Engineering.
+              Graduated from Birziet University with Bachelor of Computer Engineering in 2023.
               </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/backend.png")} alt="Server icon" />
+            <img className={styles.aboutItemImg} src={getImageUrl("about/backend.png")} alt="Server icon" />
             <div className={styles.aboutItemText}>
               <h3>Backend Developer</h3>
               <p>
@@ -34,7 +34,7 @@ export const About = () => {
             </div>
           </li>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/frontend.png")} alt="UI icon" />
+            <img className={styles.aboutItemImg} src={getImageUrl("about/frontend.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
             <h3>Frontend Developer</h3>
               <p>

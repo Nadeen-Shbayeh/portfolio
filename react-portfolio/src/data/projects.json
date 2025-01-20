@@ -11,7 +11,16 @@
       "imageSrc": "projects/projectb.PNG",
       "description": "This is a project made to learn React JS by building an app.",
       "skills": ["React", "JavaScripte", "Bootstarp"],
-      "source": "https://github.com/Nadeen-Shbayeh/croissant-website"
+      "source": "https://github.com/Nadeen-Shbayeh/croissant-website",
+      "demo": "https://croissant-website.vercel.app/"
+    },
+    {
+      "title": "Car rental website",
+      "imageSrc": "projects/projectc.PNG",
+      "description": "This project is a website for a car rental company.",
+      "skills": ["React","HTML", "CSS"],
+      "source": "https://github.com/Nadeen-Shbayeh/car-rent-app.git",
+      "demo": "https://car-rent-app-ruby.vercel.app/"
     }
    
   ]
