@@ -15,6 +15,7 @@
   max-width: 50%;
   z-index: 2;
 }
+
 .title {
   font-size: 4rem;
   font-weight: bold;
@@ -23,7 +24,6 @@
   overflow: hidden; /* Ensures the animation stays within bounds */
   white-space: nowrap; /* Prevents text wrapping */
   width: 0; /* Initial width for typing effect */
-  
   animation: typing 5s steps(50, end) infinite, blink 0.9s step-end infinite;
 }
 
@@ -53,14 +53,12 @@
   }
 }
 
-
 .description {
   margin: 1rem 0;
   font-size: 1.3rem;
   line-height: 1.7;
   color: #ffffff;
 }
-
 
 .contactBtn {
   display: inline-block;
@@ -75,8 +73,6 @@
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
-
-
 
 .heroImg {
   width: 30%;
@@ -105,7 +101,6 @@
   width: 50vw;
   height: 50vw;
   min-width: 350px;
-  min-width: 350px;
   top: -128px;
   left: -10vw;
   border-radius: 764px;
@@ -119,7 +114,6 @@
   width: 70vw;
   height: 50vw;
   min-width: 350px;
-  min-width: 250px;
   top: 246px;
   right: -25vw;
   border-radius: 764px;
@@ -131,9 +125,76 @@
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column-reverse;
+    margin: 20px; /* Add spacing for smaller screens */
+    text-align: center; /* Center content */
   }
 
   .content {
+    max-width: 90%; /* Adjust width to fit smaller screens */
     align-items: center;
+  }
+
+  .heroImg {
+    width: 50%; /* Make the image smaller */
+    margin: 20px auto; /* Center the image */
+  }
+
+  .title {
+    font-size: 3rem; /* Reduce title size */
+  }
+
+  .description {
+    font-size: 1rem; /* Adjust text size */
+    line-height: 1.5; /* Adjust line height */
+  }
+
+  .contactBtn {
+    padding: 0.6rem 1rem; /* Adjust button size */
+    font-size: 0.9rem;
+  }
+
+  .topBlur,
+  .bottomBlur {
+    width: 70vw; /* Adjust blur size */
+    height: 70vw;
+    min-width: 200px; /* Reduce minimum size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    flex-direction: column-reverse;
+    margin: 15px; /* Add smaller spacing for very small screens */
+  }
+
+  .content {
+    max-width: 100%; /* Take full width */
+    align-items: center;
+  }
+
+  .heroImg {
+    width: 70%; /* Make the image even smaller */
+    margin: 15px auto;
+  }
+
+  .title {
+    font-size: 1.5rem; /* Further reduce title size */
+  }
+
+  .description {
+    font-size: 0.9rem; /* Smaller text size */
+    line-height: 1.4;
+  }
+
+  .contactBtn {
+    padding: 0.5rem 0.8rem; /* Adjust button padding */
+    font-size: 0.8rem;
+  }
+
+  .topBlur,
+  .bottomBlur {
+    width: 80vw; /* Adjust blur size */
+    height: 80vw;
+    min-width: 150px; /* Reduce minimum size further */
   }
 }
