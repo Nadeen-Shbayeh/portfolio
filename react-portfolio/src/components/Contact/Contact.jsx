@@ -12,19 +12,49 @@ export const Contact = () => {
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/gmail.png")} alt="Email icon" />
-          <a href="mailto:nadeenshbayeh@gmail.com">nadeenshbayeh@gmail.com</a>
+          <a href="mailto:nadeenshbayeh@gmail.com">
+            <img src={getImageUrl("contact/gmail.png")} 
+            alt="Email icon" 
+            />
+          </a>
+      
         </li>
         <li className={styles.link}>
-          <img
-            src={getImageUrl("contact/linkedin.png")}
-            alt="LinkedIn icon"
-          />
-          <a href="https://www.linkedin.com/in/nadeen-shbayeh-124183222/">linkedin.com/nadeen-shbayeh</a>
+          <a href="https://www.linkedin.com/in/nadeen-shbayeh-124183222/" target="_blank" rel="noopener noreferrer">
+            <img
+              src={getImageUrl("contact/linkedin.png")}
+              alt="LinkedIn icon"
+            />
+          </a>
+        
         </li>
         <li className={styles.link}>
-          <img src={getImageUrl("contact/github.png")} alt="Github icon" />
-          <a href="https://github.com/Nadeen-Shbayeh">github.com/Nadeen-Shbayeh</a>
+          <a href="https://github.com/Nadeen-Shbayeh" target="_blank" rel="noopener noreferrer">
+            <img src={getImageUrl("contact/github.png")} 
+            alt="Github icon" 
+            />
+          </a>
+        </li>
+        <li className={styles.link}>
+          <a href="https://www.facebook.com/naden.shbayeh/" target="_blank" rel="noopener noreferrer">
+            <img src={getImageUrl("contact/fb.png")} 
+            alt="facebook icon" 
+            />
+          </a>
+        </li>
+        <li className={styles.link}>
+          <a href="https://x.com/Nadeen_Shbayeh" target="_blank" rel="noopener noreferrer">
+            <img src={getImageUrl("contact/x.png")} 
+            alt="twiter icon" 
+            />
+          </a>
+        </li>
+        <li className={styles.link}>
+          <a href="https://www.instagram.com/nadeen_shbayeh/" target="_blank" rel="noopener noreferrer">
+            <img src={getImageUrl("contact/Instagram.png")} 
+            alt="instagram icon" 
+            />
+          </a>
         </li>
       </ul>
     </footer>

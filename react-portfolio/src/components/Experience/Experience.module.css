@@ -2,7 +2,7 @@
 
 .container {
   color: var(--color-text);
-  margin-top: 79px;
+  margin-top: 180px;
   margin-left: 10%;
   margin-right: 10%;
 
@@ -27,7 +27,7 @@
   width: 45%;
   display: flex;
   flex-wrap: wrap;
-  gap: 37px;
+  gap: 30px;
 }
 
 .skill {

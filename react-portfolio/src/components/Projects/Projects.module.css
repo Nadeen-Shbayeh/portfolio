@@ -12,15 +12,82 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px; /* Added spacing below title */
 }
 
 .projects {
   margin-top: 37px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+ 
   align-items: center;
   justify-content: center;
   gap: 15px;
-  width: 100%;
+  position: relative; /* Required for swiper navigation */
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-primary); /* Use theme color for arrows */
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.1); /* Light transparent background for buttons */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Slightly darker on hover */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px; /* Adjust arrow icon size */
+}
+
+/* Swiper Pagination Dots */
+.swiper-pagination-bullet {
+  background-color: var(--color-secondary); /* Use theme secondary color for bullets */
+  width: 12px;
+  height: 12px;
+  opacity: 0.7; /* Slightly transparent */
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--color-primary); /* Highlight active bullet */
+  opacity: 1; /* Fully opaque */
+}
+
+/* Make pagination dots larger on hover */
+.swiper-pagination-bullet:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title {
+    font-size: 28px; /* Smaller font for mobile */
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 35px;
+    height: 35px; /* Adjust size for smaller screens */
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px; /* Smaller dots on mobile */
+  }
 }
