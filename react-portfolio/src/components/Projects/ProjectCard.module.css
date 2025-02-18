@@ -1,90 +1,115 @@
 @import "../../vars.css";
 
 .container {
-  margin-left: 30%;
-  margin-bottom: 5%;
+  margin: 5% auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-radius: 10px;
   background: linear-gradient(180deg, #45719b 0%, #3f668a 100%);
   box-shadow: 0 16px 14px 0 #04152d;
-  padding: 18px 24px;
-  width: 40%;
-  height: 20%;
-  justify-items: center;
+  padding: 2vw 3vw;
+  width: 90%; /* Full width on small screens */
+  max-width: 500px; /* Restrict max width */
+  height: auto; /* Allow dynamic height */
 }
 
-
 .image {
-  margin-bottom: 26px;
+  margin-bottom: 2vw;
   width: 80%;
-  margin-left: 50px;
-  
+  max-width: 400px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title {
-  font-size: 25px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 700;
+  text-align: center;
 }
 
 .description {
   margin-top: 6px;
-  font-size: 20px;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
   font-weight: 400;
+  text-align: center;
 }
 
 .skills {
   width: 100%;
-  margin-top: 14px;
+  margin-top: 1vw;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 6px;
   list-style: none;
+  justify-content: center;
 }
 
 .skill {
-  font-size: 25px;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
   font-weight: 400;
   border-radius: 100px;
   background: var(--color-dark);
-  padding: 2px 22px;
+  padding: 5px 15px;
 }
 
 .links {
   width: 100%;
-  margin-top: 26px;
+  margin-top: 2vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .link {
-  display: inline-block; /* Ensures it's treated like a button */
+  display: inline-block;
   text-decoration: none;
-  color: var(--color-text); /* Text color */
-  font-size: 30px;
+  color: var(--color-text);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-weight: 600;
-  border-radius: 100px; /* Rounded corners */
-  background: var(--color-primary); /* Button background */
-  padding: 10px 24px; /* Adjusted padding for better proportions */
-  text-align: center; /* Centers text */
-  transition: all 0.3s ease; /* Smooth transitions */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  border-radius: 100px;
+  background: var(--color-primary);
+  padding: 0.8vw 2vw;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .link:hover {
-  background: var(--color-secondary); /* Change background on hover */
-  color: var(--color-light); /* Change text color on hover */
-  transform: translateY(-3px); /* Slight lift on hover */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  background: var(--color-secondary);
+  color: var(--color-light);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
 
 .link:active {
-  transform: translateY(0); /* Reset lift on click */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Original shadow */
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .link:focus {
-  outline: 3px solid var(--color-accent); /* Accessible focus outline */
-  outline-offset: 3px; /* Add spacing for focus outline */
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link {
+    width: 80%;
+    text-align: center;
+  }
 }

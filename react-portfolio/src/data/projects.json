@@ -1,26 +1,35 @@
 [
     {
-      "title": "Project A",
+      "title": "Car rental website",
+      "imageSrc": "projects/projectc.PNG",
+      "description": "React-based frontend application for car rental services. It features car listings with filtering, detailed car views, a booking system.",
+      "skills": ["React","HTML", "CSS"],
+      "source": "https://github.com/Nadeen-Shbayeh/car-rent-app.git",
+      "demo": "https://car-rent-app-ruby.vercel.app/"
+    },
+    {
+      "title": "Intranet Company Application",
       "imageSrc": "projects/projecta.PNG",
-      "description": "This project creates an internal communication technique for trust company.",
-      "skills": ["PHP", "Laravel", "MyPhpAdmin"],
+      "description": "comprehensive solution for internal organizational management, offering a wide range of features to enhance communication, collaboration, and resource sharing within a company. Built on a robust and scalable framework, it ensures security, efficiency, and ease of use for all users.",
+      "skills": ["PHP", "Laravel", "MyPhpAdmin","XAMPP","Tailwind CSS","Vite"],
       "source": "https://github.com/Nadeen-Shbayeh/Intranet-Trust-company"
     },
     {
-      "title": "Project B",
+      "title": "Bakery service website",
       "imageSrc": "projects/projectb.PNG",
-      "description": "This is a project made to learn React JS by building an app.",
-      "skills": ["React", "JavaScripte", "Bootstarp"],
+      "description": "modern React-based web application focused on showcasing and promoting various types of croissants. The application serves as a digital platform for a bakery or café, featuring an attractive and user-friendly interface. It includes multiple pages for different sections of the business.",
+      "skills": ["React", "JavaScript"],
       "source": "https://github.com/Nadeen-Shbayeh/croissant-website",
       "demo": "https://croissant-website-eta.vercel.app/"
     },
     {
-      "title": "Car rental website",
-      "imageSrc": "projects/projectc.PNG",
-      "description": "This project is a website for a car rental company.",
-      "skills": ["React","HTML", "CSS"],
-      "source": "https://github.com/Nadeen-Shbayeh/car-rent-app.git",
-      "demo": "https://car-rent-app-ruby.vercel.app/"
+      "title": "Mathew Game",
+      "imageSrc": "projects/projectd.PNG",
+      "description": "mathew-game (graduation project), a mathematical game Designed specifically for school students, Mathew is an engaging and interactive educational game that makes learning math fun and exciting. In Mathew, players embark on a quest filled with challenging math puzzles, exciting challenges.",
+      "skills": ["Unity", "C#"],
+      "source": "https://github.com/Nadeen-Shbayeh/MATHEW-GAME-DESKTOP-3.git",
+      "demo": "https://drive.google.com/file/d/1KgzB5SWc0udWHyatzGkGvA-Jupdn_62t/view?usp=sharing"
     }
+    
    
   ]

@@ -2,12 +2,12 @@
 
 .container {
   position: relative;
-  
+
   border-radius: 15px;
   padding: 73px;
   margin-top: 129px;
   z-index: 1;
-  margin-left: 10%;
+  margin-left: 7%;
   margin-right: 10%;
 }
 
@@ -16,7 +16,7 @@
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;
-  text-transform: uppercase;
+
 }
 
 .content {
@@ -26,10 +26,11 @@
 }
 
 .aboutImage {
-  width: 20%;
+  width: 35%;
+  margin-right: 20%;
 }
 .aboutItemImg {
-  width: 15%;
+  width: clamp(30px, 5vw, 50px);
 }
 
 .aboutItems {
@@ -53,8 +54,8 @@
 }
 
 .aboutItem:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
 }
 
 
@@ -67,12 +68,11 @@ img {
 }
 
 .aboutItem h3 {
-  font-size: 25px;
-  font-weight: 600;
+  font-size: clamp(18px, 2.5vw, 25px);
 }
 
 .aboutItem p {
-  font-size: 25px;
+  font-size: clamp(18px, 2.5vw, 25px);
 }
 
 @media screen and (max-width: 830px) {
