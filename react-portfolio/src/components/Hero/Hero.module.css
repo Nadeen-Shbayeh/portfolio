@@ -17,13 +17,15 @@
 }
 
 .title {
-  font-size: 4rem;
+  font-size: clamp(1.5rem, 4vw, 3rem);
   font-weight: bold;
   color: #ebe5e5;
   position: relative;
   overflow: hidden; /* Ensures the animation stays within bounds */
   white-space: nowrap; /* Prevents text wrapping */
-  width: 0; /* Initial width for typing effect */
+  text-align: center; /* Centers the text horizontally */
+  margin: 0 auto; /* Centers the text horizontally */
+  max-width: 100%; /* Sets the maximum width of the title */
   animation: typing 5s steps(50, end) infinite, blink 0.9s step-end infinite;
 }
 
