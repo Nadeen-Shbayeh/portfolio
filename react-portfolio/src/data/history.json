@@ -4,15 +4,15 @@
       "organisation": "Trust Insurance Company",
       "startDate": "June, 2023",
       "endDate": "Present",
-      "experiences": ["Worked on PHP software systems", "Reduced load times by 50%"],
+      "experiences": ["PHP software development", "Reduced load times by 50%"],
       "imageSrc": "history/trust.png"
     },
     {
-      "role": "Backend developer trinee",
+      "role": "Backend developer intern",
       "organisation": "Projneer",
       "startDate": "june, 2022",
       "endDate": "Oct, 2022",
-      "experiences": ["Worked on Perl", "Designed new scripts with python"],
+      "experiences": ["Perl programming", "Designed new scripts with python"],
       "imageSrc": "history/projneer.png"
     },
     {
@@ -22,7 +22,7 @@
       "endDate": "Jan, 2022",
       "experiences": [
         "Worked on Picto blox libraries",
-        "Volenteer as at teacher to learn kids"
+        "Volenteer as at teacher to learn students programming techniques"
       ],
       "imageSrc": "history/Picto.png"
     }

@@ -1,8 +1,8 @@
-@import "../../vars.css";
+/* Certificates.module.css */
 
 .container {
-  margin-top: 76px;
   color: var(--color-text);
+  margin-top: 10vw;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -13,14 +13,6 @@
   font-weight: 700;
   letter-spacing: 1.75px;
   text-transform: uppercase;
-}
-
-.projects {
-  margin-top: 37px;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  position: relative; /* Required for swiper navigation */
 }
 
 /* Swiper Navigation Buttons */
@@ -66,6 +58,56 @@
   transform: scale(1.2);
   opacity: 1;
 }
+/* Card Container */
+.card {
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures that children are centered horizontally */
+  justify-content: center; /* Center the content vertically */
+  border-radius: 10px;
+  padding: 2vw 3vw;
+  width: 100%; /* Full width on small screens */
+  max-width: 1000px; /* Restrict max width */
+  height: auto; /* Allow dynamic height */
+}
+
+/* Certificate Image */
+.image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  display: block;  /* Ensure it's a block element for centering */
+  margin: 0 auto;  /* Center horizontally */
+}
+
+/* Certificate Title */
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e6e3ec;
+  margin-top: 15px;
+}
+
+/* Certificate Description */
+.description {
+  font-size: 1rem;
+  color: #af9df0;
+  margin-top: 5px;
+}
+
+/* Certificate Date */
+.date {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+
 
 /* Responsive Adjustments */
 @media screen and (max-width: 480px) {
@@ -97,14 +139,6 @@
     margin-right: 3%;
   }
 
-  .title {
-    font-size: 24px; /* Even smaller font for phones */
-    margin-bottom: 15px;
-  }
-
-  .projects {
-    gap: 10px; /* Reduce spacing between projects */
-  }
 
   .swiper-button-next,
   .swiper-button-prev {

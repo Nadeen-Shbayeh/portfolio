@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "title": "Agile Project Management",
+      "issuer": "Super Quality Academy",
+      "date": "Sep 2024",
+      "image": "certificates/agile.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Python fundamentals",
+      "issuer": "Great learning",
+      "date": "Jan 2024",
+      "image": "certificates/python.PNG"
+    },
+    {
+      "id": 3,
+      "title": "Fundamentals Of Cybersecurity",
+      "issuer": "Cystack",
+      "date": "Jan 2023",
+      "image": "certificates/cystack.PNG"
+     
+    },
+    {
+        "id": 4,
+        "title": "Unity Game Development",
+        "issuer": "the hope international company",
+        "date": "Apr 2022",
+        "image": "certificates/unity.PNG"
+      }
+  ]
+  

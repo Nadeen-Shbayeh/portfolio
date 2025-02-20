@@ -15,7 +15,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(139, 137, 146, 0.8);
+  background: rgba(84, 57, 109, 0.8);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   height: var(--navbar-height);

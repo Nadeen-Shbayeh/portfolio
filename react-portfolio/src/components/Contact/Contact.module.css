@@ -3,7 +3,7 @@
 .container {
   color: var(--color-text);
   margin-top: 120px;
-  background: rgba(130, 129, 133, 0.8);
+  background: rgba(92, 67, 116, 0.8);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   display: flex;
