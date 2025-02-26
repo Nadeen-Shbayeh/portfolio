@@ -1,5 +1,4 @@
 @import "../../vars.css";
-
 .container {
   color: var(--color-text);
   margin-top: 120px;
@@ -13,63 +12,75 @@
   padding: 58px 10%;
   gap: 10px;
 }
-
 .text h2 {
-
   font-weight: 700;
   letter-spacing: 4px;
   font-size: clamp(1.5rem, 4vw, 3rem);
-
 }
-
 .text p {
- 
   font-weight: 400;
   letter-spacing: 2px;
   font-size: clamp(1.2rem, 3vw, 2rem);
-
 }
-
 .links {
   display: flex; /* Set the container as a flexbox */
-  flex-direction: row; /* Align items horizontally */
-  align-items: flex-start;
+  flex-wrap: wrap; /* Allow items to wrap to next line */
+  align-items: center;
+  justify-content: center;
   list-style: none;
   gap: 26px;
 }
-
 .link {
   display: flex;
   align-items: center;
   gap: 25px;
 }
-
 .link a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 30px;
+  font-size: clamp(1rem, 2.5vw, 30px);
   font-weight: 400;
   letter-spacing: 1.5px;
+  white-space: nowrap; /* Prevent text wrapping within the link */
 }
-
 .link img {
   width: 40px;
   height: 40px;
+  flex-shrink: 0;
 }
-
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
     gap: 23px;
+    padding: 40px 5%;
   }
-
   .text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
-
   .links {
-    align-items: center;
+    justify-content: center;
+    gap: 20px 26px; /* Row gap 20px, column gap 26px */
+  }
+ 
+  /* Make the links more compact */
+  .link {
+    gap: 15px;
+  }
+}
+
+/* Additional breakpoint for very small screens */
+@media screen and (max-width: 480px) {
+  .link a {
+    font-size: 20px;
+  }
+  .link img {
+    width: 40px;
+    height: 40px;
+  }
+  .links {
+    gap: 15px;
   }
 }

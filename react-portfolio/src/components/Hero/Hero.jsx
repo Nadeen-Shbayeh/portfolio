@@ -16,7 +16,7 @@ export const Hero = () => {
           <br />
           When I’m not coding, you’ll find me exploring new technologies, mentoring others, or pursuing my interests in photography 📸, fitness 🏋️‍♀️, and traveling ✈️.
         </p>
-        <a href='/cv.pdf' className={styles.contactBtn} download>
+        <a href='public/cv.pdf' className={styles.contactBtn} download>
           Download my CV 
         </a>
       </div>
