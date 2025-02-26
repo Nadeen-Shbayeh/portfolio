@@ -4,6 +4,8 @@ import styles from "./Hero.module.css";
 import { getImageUrl } from "../../utils";
 
 export const Hero = () => {
+
+  const cvUrl = "https://drive.google.com/file/d/1eORVpqhiypXQ4nbHbW98F9gFahzW7FMW/view?usp=sharing";
   return (
     <section className={styles.container}>
       <div className={styles.content}>
@@ -16,8 +18,8 @@ export const Hero = () => {
           <br />
           When I’m not coding, you’ll find me exploring new technologies, mentoring others, or pursuing my interests in photography 📸, fitness 🏋️‍♀️, and traveling ✈️.
         </p>
-        <a href='public/cv.pdf' className={styles.contactBtn} download>
-          Download my CV 
+        <a href={cvUrl} className={styles.contactBtn} target="_blank" rel="noopener noreferrer">
+          View my CV
         </a>
       </div>
       <img
