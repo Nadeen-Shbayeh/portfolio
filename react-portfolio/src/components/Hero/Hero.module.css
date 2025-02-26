@@ -14,6 +14,9 @@
 .content {
   max-width: 50%;
   z-index: 2;
+  max-width: 50%;
+  z-index: 2;
+  animation: slideInFromLeft 1s ease-out forwards;
 }
 
 .title {
@@ -80,10 +83,8 @@
   width: 30%;
   z-index: 1;
   margin-right: 50px;
-  animation-name: floating;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation: slideInFromRight 1s ease-out forwards, floating 3s ease-in-out infinite;
+  
 }
 
 @keyframes floating {
@@ -198,5 +199,28 @@
     width: 80vw; /* Adjust blur size */
     height: 80vw;
     min-width: 150px; /* Reduce minimum size further */
+  }
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
