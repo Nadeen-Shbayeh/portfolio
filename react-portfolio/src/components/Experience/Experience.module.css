@@ -116,7 +116,7 @@
   background-size: 0 100%;
   background-repeat: no-repeat;
   transition: 0.4s;
-  background: rgba(134, 134, 170, 0.8);
+  background: rgba(169, 166, 172, 0.8);
   animation: slideInFromRight 0.5s ease-out forwards;
   opacity: 0; /* Start with opacity 0 to make items invisible before animation */
 

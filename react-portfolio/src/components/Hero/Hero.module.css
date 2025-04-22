@@ -5,10 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 49px;
   z-index: 1;
-  margin-left: 10%;
-  margin-right: 5%;
+
+  padding: 10% 0% 5% 10%;
 }
 
 .content {
@@ -70,7 +69,7 @@
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
-  color: #5a1d72;
+  color: #584f5c;
   background-color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -80,9 +79,8 @@
 }
 
 .heroImg {
-  width: 30%;
+  width: 25%;
   z-index: 1;
-  margin-right: 50px;
   animation: slideInFromRight 1s ease-out forwards, floating 3s ease-in-out infinite;
   
 }
@@ -104,26 +102,14 @@
   width: 50vw;
   height: 50vw;
   min-width: 350px;
-  top: -128px;
-  left: -10vw;
+  top: 3px;
+  left: 3vw;
   border-radius: 764px;
-  background: rgba(99, 25, 109, 0.7);
+  background: rgba(124, 128, 133, 0.7);
   filter: blur(100px);
   z-index: 0;
 }
 
-.bottomBlur {
-  position: absolute;
-  width: 70vw;
-  height: 50vw;
-  min-width: 350px;
-  top: 246px;
-  right: -25vw;
-  border-radius: 764px;
-  background: rgba(216, 128, 212, 0.7);
-  filter: blur(100px);
-  z-index: 0;
-}
 
 @media screen and (max-width: 830px) {
   .container {
@@ -137,10 +123,7 @@
     align-items: center;
   }
 
-  .heroImg {
-    width: 50%; /* Make the image smaller */
-    margin: 20px auto; /* Center the image */
-  }
+ 
 
   .title {
     font-size: 3rem; /* Reduce title size */

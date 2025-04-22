@@ -6,7 +6,8 @@
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  background: rgba(134, 134, 170, 0.8);  box-shadow: 0 16px 14px 0 #04152d;
+  background: rgba(169, 166, 172, 0.8);
+ box-shadow: 0 16px 14px 0 #04152d;
   padding: 2vw 3vw;
   width: 90%; /* Full width on small screens */
   max-width: 500px; /* Restrict max width */

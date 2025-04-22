@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { getImageUrl } from "../../utils";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 import styles from "./Certificates.module.css";
 import certificates from "../../data/certificates.json";
@@ -14,17 +14,21 @@ export const Certificates = () => {
     <section className={styles.container} id="certificates">
       <h2 className={styles.title}>Certificates</h2>
       <Swiper
-        modules={[Navigation, Pagination]}
-        spaceBetween={10}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
+        modules={[Autoplay, Navigation, Pagination]}
+        spaceBetween={30}
+        slidesPerView={2} // 👈 shows 3 certs at a time, tweak as needed
+        loop={true}
+        autoplay={{
+          delay: 7000, // ⏱ wait 3s per slide
+          disableOnInteraction: false,
+        }}
+        speed={800} // 🎷 smooth transition speed
       >
         {certificates.map((certificate, id) => (
           <SwiperSlide key={id}>
             <div className={styles.card}>
               <img
-                src={getImageUrl(certificate.image)} // Ensure the JSON has a correct image path
+                src={getImageUrl(certificate.image)}
                 alt={`Certificate of ${certificate.title}`}
                 className={styles.image}
               />
