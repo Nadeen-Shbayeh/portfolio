@@ -97,18 +97,7 @@
   }
 }
 
-.topBlur {
-  position: absolute;
-  width: 50vw;
-  height: 50vw;
-  min-width: 350px;
-  top: 3px;
-  left: 3vw;
-  border-radius: 764px;
-  background: rgba(124, 128, 133, 0.7);
-  filter: blur(100px);
-  z-index: 0;
-}
+
 
 
 @media screen and (max-width: 830px) {
@@ -139,12 +128,7 @@
     font-size: 0.9rem;
   }
 
-  .topBlur,
-  .bottomBlur {
-    width: 70vw; /* Adjust blur size */
-    height: 70vw;
-    min-width: 200px; /* Reduce minimum size */
-  }
+ 
 }
 
 @media screen and (max-width: 480px) {
@@ -177,12 +161,7 @@
     font-size: 0.8rem;
   }
 
-  .topBlur,
-  .bottomBlur {
-    width: 80vw; /* Adjust blur size */
-    height: 80vw;
-    min-width: 150px; /* Reduce minimum size further */
-  }
+
 }
 
 

@@ -16,10 +16,10 @@ export const Certificates = () => {
       <Swiper
         modules={[Autoplay, Navigation, Pagination]}
         spaceBetween={30}
-        slidesPerView={2} // 👈 shows 3 certs at a time, tweak as needed
+        slidesPerView={1} // 👈 shows 3 certs at a time, tweak as needed
         loop={true}
         autoplay={{
-          delay: 7000, // ⏱ wait 3s per slide
+          delay: 3000, 
           disableOnInteraction: false,
         }}
         speed={800} // 🎷 smooth transition speed
