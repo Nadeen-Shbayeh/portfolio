@@ -5,7 +5,7 @@ import { getImageUrl } from "../../utils";
 
 export const Hero = () => {
 
-  const cvUrl = "https://drive.google.com/file/d/1u3apWolZf-FCw3iTjDmD7MQ2cBSskkXS/view?usp=sharing";
+  const cvUrl = "https://drive.google.com/file/d/1WMcTnqALbFmxsobQGtOQcJxYSZlMUa2X/view?usp=sharing";
   return (
     <section className={styles.container}>
       <div className={styles.content}>
